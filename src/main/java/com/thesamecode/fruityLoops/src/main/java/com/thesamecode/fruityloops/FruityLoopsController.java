@@ -32,12 +32,12 @@ public class FruityLoopsController {
 	    fruits.add(new Item("Goji Berries", 4.0));
 	    fruits.add(new Item("Guava", .75));
 	    
-	    model.addAttribute("fruit1", fruits.get(0));
-	    model.addAttribute("fruit2", fruits.get(1));
-	    model.addAttribute("fruit3", fruits.get(2));
-	    model.addAttribute("fruit4", fruits.get(3));
-	        
-	    // Add fruits your view model here
+	    model.addAttribute("fruits", fruits);
+//
+//	    model.addAttribute("fruit1", fruits.get(0));
+//	    model.addAttribute("fruit2", fruits.get(1));
+//	    model.addAttribute("fruit3", fruits.get(2));
+//	    model.addAttribute("fruit4", fruits.get(3));
 	        
 	    return "index.jsp";
 	}

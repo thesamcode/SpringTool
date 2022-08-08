@@ -21,20 +21,12 @@
 			<th>Price</th>
 		</tr>
 		<tr>
-			<td><c:out value="${fruit1.name}"/></td>
-			<td><c:out value="${fruit1.price}"/></td>
-		</tr>
-		<tr>
-			<td><c:out value="${fruit2.name}"/></td>
-			<td><c:out value="${fruit2.price}"/></td>
-		</tr>
-		<tr>
-			<td><c:out value="${fruit3.name}"/></td>
-			<td><c:out value="${fruit3.price}"/></td>
-		</tr>
-		<tr>
-			<td><c:out value="${fruit4.name}"/></td>
-			<td><c:out value="${fruit4.price}"/></td>
+			<c:forEach var="oneFruit" items="${fruits}">
+			<tr>
+			<td><c:out value="${oneFruit.name}"></c:out></td>
+			<td><c:out value="$${oneFruit.price}"></c:out></td>
+			</tr>
+			</c:forEach>			
 		</tr>
 	</Table>
 
